@@ -33,6 +33,12 @@ func (w *Woman) Walk() {
 	fmt.Println(w.name, "is walking.")
 }
 
+type Any interface{}
+
+func Something(any Any) {
+	fmt.Println(any)
+}
+
 func main() {
 	fmt.Println("Playing with Interfaces")
 	dina := Woman{"dina"}
@@ -40,4 +46,6 @@ func main() {
 	dina.Walk()
 	john.Walk()
 	john.Talk()
+	Something("Dibesh Raj Subedi")
+	Something(12)
 }
