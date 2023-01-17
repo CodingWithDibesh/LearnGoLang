@@ -2,7 +2,10 @@
 package main
 
 // Importing I/O package
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // Executing Main Function
 func main() {
@@ -31,5 +34,20 @@ func main() {
 	// Checking string Mutability
 	val5 = "My Name is Dibesh"
 	fmt.Println(val5)
+
+	// String Manipulation Begins
+	val6 := "Dibesh"
+
+	// String is included in a substring
+	fmt.Println(strings.Contains(val5, val6))
+
+	// Replacing all the strings
+	fmt.Println(strings.ReplaceAll(val5, "e", " me"))
+	fmt.Println(val5)
+
+	// Splitting string
+	fmt.Println(strings.Split(val5, " "))
+
+	//  For more about string manipulation use strings and auto intelligence to suggest the possible operations
 
 }
