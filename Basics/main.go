@@ -21,4 +21,7 @@ func main() {
 	// TypeCasting and adding up the variables
 	fmt.Println(int64(val2) + val3)
 
+	// Shorthand Variable Declaration
+	val4 := 5
+	fmt.Printf("val4 has value %d and is of type %T", val4, val4)
 }
