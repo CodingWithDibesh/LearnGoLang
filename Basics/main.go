@@ -23,5 +23,13 @@ func main() {
 
 	// Shorthand Variable Declaration
 	val4 := 5
-	fmt.Printf("val4 has value %d and is of type %T", val4, val4)
+	fmt.Printf("val4 has value %d and is of type %T\n", val4, val4)
+
+	// Declaring a string via shorthand
+	val5 := "MyName is Dibesh"
+	fmt.Println(val5)
+	// Checking string Mutability
+	val5 = "My Name is Dibesh"
+	fmt.Println(val5)
+
 }
