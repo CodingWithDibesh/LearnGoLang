@@ -1,4 +1,4 @@
-package structs
+package view
 
 type Response struct {
 	Code int         `json:"code"`

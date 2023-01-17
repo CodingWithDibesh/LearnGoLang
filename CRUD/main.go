@@ -1,25 +1,13 @@
 package main
 
 import (
-	"crud/structs"
-	"encoding/json"
+	"crud/controller"
 	"fmt"
 	"net/http"
 )
 
 func main() {
-	mux := http.NewServeMux()
-	mux.HandleFunc("/ping", ping)
-	http.ListenAndServe("localhost:3000", mux)
-}
-
-func ping(resp http.ResponseWriter, req *http.Request) {
-	fmt.Println(req.Method)
-	if req.Method == http.MethodGet {
-		data := structs.Response{
-			Code: http.StatusOK,
-			Body: "pong",
-		}
-		json.NewEncoder(resp).Encode(data)
-	}
+	server := "localhost:3000"
+	fmt.Println("Server started at http://", server)
+	http.ListenAndServe(server, controller.Register())
 }
