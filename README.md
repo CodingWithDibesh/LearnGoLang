@@ -32,4 +32,4 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
 
 ## Special Thanks
 
-I would like to specially thank [@weasionaryTeam](https://github.com/wesionaryTEAM) and all the mentors there who supported me technically, financially and emotionally to achieve this skill sets.
+I would like to specially thank [@wesionaryTeam](https://github.com/wesionaryTEAM) and all the mentors there who supported me technically, financially and emotionally to achieve this skill sets.
