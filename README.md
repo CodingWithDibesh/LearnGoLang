@@ -4,9 +4,9 @@
 
 This is my journey for get going in Golang. I will be sharing my findings, experience and learnings while I'm learning [GoLang](https://golang.google.cn/).
 
-<img src="https://miro.medium.com/max/1132/0*DPxp_XfGsvDBvInd.gif" alt="GoLang Gif" style="width:355px;"/>
+<img src="https://miro.medium.com/max/1132/0*DPxp_XfGsvDBvInd.gif" alt="GoLang Gif" style="width:470px;"/>
 
-![Udemy](https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white) ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![GO](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Udemy](https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white) ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![GO](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![GumRoad](https://img.shields.io/badge/GUMROAD-36a9ae?style=for-the-badge&logo=gumroad&logoColor=white)
 
 ## Table Of Contents
 
@@ -14,6 +14,7 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
   - [Table Of Contents](#table-of-contents)
   - [Practice](#practice)
   - [References](#references)
+  - [Special Thanks](#special-thanks)
 
 ## Practice
 
@@ -22,7 +23,13 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
 |SN |Practice  |Area Covered |
 |:--|:---------|:------------|
 |1|[GetGoing Directory](./GetGoing/README.md)|Basics of Go, A REST API with simple CRUD |
+|2|[LetsGo Directory](./LetsGo/README.md)| A step by Step guide of creating a fast, secure and maintainable go application. |
 
 ## References
 
 - [GetGoing](https://www.udemy.com/course/getgoing/)  Free Course From Udemy amd its [Source Code](https://github.com/L04DB4L4NC3R/getgoing)
+- [LetsGo](https://alexedwards.gumroad.com/l/lets-go) Book by Alex Edwards
+
+## Special Thanks
+
+I would like to specially thank [@weasionaryTeam](https://github.com/wesionaryTEAM) and all the mentors there who supported me technically, financially and emotionally to achieve this skill sets.
