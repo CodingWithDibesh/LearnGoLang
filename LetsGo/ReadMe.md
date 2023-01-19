@@ -6,7 +6,11 @@
 
 ## Coding Snippet Box
 
-I will be creating the the Snippet Box app as per explained in the book by [Alex Edwards](https://github.com/alexedwards) along with documenting all the necessary resources. Explore more of the code in [snippetbox](./snippetbox) directory.
+I will be creating the the Snippet Box app as per explained in the book by [Alex Edwards](https://github.com/alexedwards) along with documenting all the necessary resources. Explore more of the code in [snippetbox](./snippetbox/ReadMe.md) directory.
+
+## Things to consider
+
+- Avoid using `DefaultServeMux` for security purpose and prefer locally-scoped servemux
 
 ## To Further Research
 
