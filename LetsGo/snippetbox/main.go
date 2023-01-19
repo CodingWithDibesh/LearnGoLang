@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+	"strconv"
 )
 
 // A Request and Response Handler which would be converted into endpoint
@@ -17,7 +19,12 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 // Route: localhost:4000/snippet/view
 func snippetView(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Display a Snippet"))
+	id, err := strconv.Atoi(r.URL.Query().Get("id"))
+	if err != nil || id < 1 {
+		http.NotFound(w, r)
+		return
+	}
+	fmt.Fprintf(w, "Display a specific snippet with ID %d...", id)
 }
 
 // Route: localhost:4000/snippet/create
