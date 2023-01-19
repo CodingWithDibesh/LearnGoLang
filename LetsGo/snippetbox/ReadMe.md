@@ -7,3 +7,4 @@
 |1|ANY|/|home|Display the home page|
 |2|ANY|/snippet/view|snippetView|Display a specific snippet|
 |2|POST|/snippet/create|snippetCreate|Create a new snippet|
+|3|ANY |/static/| http.FileServer| Serve a specific static file|

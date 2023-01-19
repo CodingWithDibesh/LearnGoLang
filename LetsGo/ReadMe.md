@@ -15,3 +15,4 @@ I will be creating the the Snippet Box app as per explained in the book by [Alex
 ## To Further Research
 
 - Supply Chain Attacks
+- Directory Traversal Attacks
