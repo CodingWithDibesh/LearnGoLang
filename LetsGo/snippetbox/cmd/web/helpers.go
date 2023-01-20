@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"net/http"
 	"runtime/debug"
+	"time"
 )
 
 // Sending A Generic 500 Internal Server Error
@@ -29,10 +31,22 @@ func (app *application) render(w http.ResponseWriter, status int, page string, d
 		app.serverError(w, err)
 		return
 	}
-	w.WriteHeader(status)
 
-	err := ts.ExecuteTemplate(w, "base", data)
+	buff := new(bytes.Buffer)
+
+	err := ts.ExecuteTemplate(buff, "base", data)
 	if err != nil {
 		app.serverError(w, err)
+	}
+
+	w.WriteHeader(status)
+
+	buff.WriteTo(w)
+}
+
+// Common dynamic data
+func (app *application) newTemplateData(r *http.Request) *templateData {
+	return &templateData{
+		CurrentYear: time.Now().Year(),
 	}
 }
