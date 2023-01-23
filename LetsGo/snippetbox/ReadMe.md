@@ -5,6 +5,7 @@
 |S.N|Method|Pattern|Handler|Action|
 |:--|:----:|:------|:-----:|:-----|
 |1|ANY|/|home|Display the home page|
-|2|ANY|/snippet/view|snippetView|Display a specific snippet|
-|2|POST|/snippet/create|snippetCreate|Create a new snippet|
-|3|ANY |/static/| http.FileServer| Serve a specific static file|
+|2|ANY|/snippet/view/:id|snippetView|Display a specific snippet|
+|3|GET|/snippet/create|snippetCreate|Display a HTML form for creating a new snippet|
+|4|POST|/snippet/create|snippetCreatePost|Create a new snippet|
+|5|ANY |/static/*filepath| http.FileServer| Serve a specific static file|

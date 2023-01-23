@@ -18,3 +18,4 @@ I will be creating the the Snippet Box app as per explained in the book by [Alex
 - Directory Traversal Attacks
 - Data Racing and its Prevention
 - Closure Pattern
+- Clean URL

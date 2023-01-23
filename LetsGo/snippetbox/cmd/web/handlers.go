@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	"github.com/itSubeDibesh/LearnGoLang/LetsGo/snippetbox/internal/models"
+	"github.com/julienschmidt/httprouter"
 )
 
 // Route: localhost:4000/
@@ -31,7 +32,8 @@ func (app *application) home(w http.ResponseWriter, r *http.Request) {
 
 // Route: localhost:4000/snippet/view
 func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
-	id, err := strconv.Atoi(r.URL.Query().Get("id"))
+	params := httprouter.ParamsFromContext(r.Context())
+	id, err := strconv.Atoi(params.ByName("id"))
 	if err != nil || id < 1 {
 		app.notFound(w)
 		return
@@ -55,6 +57,12 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
 
 // Route: localhost:4000/snippet/create
 func (app *application) snippetCreate(w http.ResponseWriter, r *http.Request) {
+	data := app.newTemplateData(r)
+	app.render(w, http.StatusOK, "create.tmpl", data)
+}
+
+// Route: localhost:4000/snippet/create
+func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request) {
 
 	if r.Method != http.MethodPost {
 		w.Header().Set("Allow", http.MethodPost)
