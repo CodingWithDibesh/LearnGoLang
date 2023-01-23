@@ -7,8 +7,16 @@ import (
 	"strconv"
 
 	"github.com/itSubeDibesh/LearnGoLang/LetsGo/snippetbox/internal/models"
+	"github.com/itSubeDibesh/LearnGoLang/LetsGo/snippetbox/internal/validator"
 	"github.com/julienschmidt/httprouter"
 )
+
+type snippetCreatForm struct {
+	Title               string
+	Content             string
+	Expires             int
+	validator.Validator `form:"-"`
+}
 
 // Route: localhost:4000/
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
@@ -55,30 +63,42 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
 
 }
 
-// Route: localhost:4000/snippet/create
+// Method:GET Route: localhost:4000/snippet/create
 func (app *application) snippetCreate(w http.ResponseWriter, r *http.Request) {
 	data := app.newTemplateData(r)
+	data.Form = snippetCreatForm{
+		Expires: 365,
+	}
 	app.render(w, http.StatusOK, "create.tmpl", data)
 }
 
-// Route: localhost:4000/snippet/create
+// Method:POST Route: localhost:4000/snippet/create
 func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request) {
+	var form snippetCreatForm
 
-	if r.Method != http.MethodPost {
-		w.Header().Set("Allow", http.MethodPost)
-		app.clientError(w, http.StatusMethodNotAllowed)
+	err := app.decodePostForm(r, &form)
+	if err != nil {
+		app.clientError(w, http.StatusBadRequest)
 		return
 	}
 
-	title := "O snail"
-	content := "O snail\nClimb Mount Fuji,\nBut slowly, slowly!\n\n– Kobayashi Issa"
-	expires := 7
+	form.CheckField(validator.NotBlank(form.Title), "title", "This field cannot be blank")
+	form.CheckField(validator.MaxChars(form.Title, 100), "title", "This field cannot be more than 100 characters long")
+	form.CheckField(validator.NotBlank(form.Content), "content", "This field cannot be blank")
+	form.CheckField(validator.PermittedInt(form.Expires, 1, 7, 365), "expires", "This field must equal 1, 7 or 365")
 
-	id, err := app.snippets.Insert(title, content, expires)
+	if !form.Valid() {
+		data := app.newTemplateData(r)
+		data.Form = form
+		app.render(w, http.StatusUnprocessableEntity, "create.tmpl", data)
+		return
+	}
+
+	id, err := app.snippets.Insert(form.Title, form.Content, form.Expires)
 	if err != nil {
 		app.serverError(w, err)
 		return
 	}
 
-	http.Redirect(w, r, fmt.Sprintf("/snippet/view?id=%d", id), http.StatusSeeOther)
+	http.Redirect(w, r, fmt.Sprintf("/snippet/view/%d", id), http.StatusSeeOther)
 }

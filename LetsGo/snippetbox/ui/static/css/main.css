@@ -6,7 +6,8 @@
     font-family: "Ubuntu Mono", monospace;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -17,7 +18,10 @@ body {
     overflow-y: scroll;
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
     padding: 2px calc((100% - 800px) / 2) 0;
 }
 
@@ -61,7 +65,8 @@ a:hover {
     text-decoration: underline;
 }
 
-textarea, input:not([type="submit"]) {
+textarea,
+input:not([type="submit"]) {
     font-size: 18px;
     font-family: "Ubuntu Mono", monospace;
 }
@@ -142,7 +147,8 @@ nav a.live:after {
     -webkit-transform: rotate(-45deg);
 }
 
-a.button, input[type="submit"] {
+a.button,
+input[type="submit"] {
     background-color: #62CB31;
     border-radius: 3px;
     color: #FFFFFF;
@@ -153,7 +159,8 @@ a.button, input[type="submit"] {
     font-weight: 700;
 }
 
-a.button:hover, input[type="submit"]:hover {
+a.button:hover,
+input[type="submit"]:hover {
     background-color: #4EB722;
     color: #FFFFFF;
     cursor: pointer;
@@ -172,12 +179,17 @@ form input[type="radio"] {
     margin-left: 18px;
 }
 
-form input[type="text"], form input[type="password"], form input[type="email"] {
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
     padding: 0.75em 18px;
     width: 100%;
 }
 
-form input[type=text], form input[type="password"], form input[type="email"], textarea {
+form input[type=text],
+form input[type="password"],
+form input[type="email"],
+textarea {
     color: #6A6C6F;
     background: #FFFFFF;
     border: 1px solid #E4E5E7;
@@ -195,7 +207,8 @@ form label {
     display: block;
 }
 
-.error + textarea, .error + input {
+.error+textarea,
+.error+input {
     border-color: #C0392B !important;
     border-width: 2px !important;
 }
@@ -284,12 +297,14 @@ table {
     width: 100%;
 }
 
-td, th {
+td,
+th {
     text-align: left;
     padding: 9px 18px;
 }
 
-th:last-child, td:last-child {
+th:last-child,
+td:last-child {
     text-align: right;
     color: #6A6C6F;
 }
@@ -310,4 +325,8 @@ footer {
     height: 60px;
     color: #6A6C6F;
     text-align: center;
+}
+
+pre {
+    overflow: auto;
 }
