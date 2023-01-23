@@ -12,9 +12,9 @@ import (
 )
 
 type snippetCreatForm struct {
-	Title               string
-	Content             string
-	Expires             int
+	Title               string `form:"title"`
+	Content             string `form:"content"`
+	Expires             int    `form:"expires"`
 	validator.Validator `form:"-"`
 }
 
@@ -75,7 +75,6 @@ func (app *application) snippetCreate(w http.ResponseWriter, r *http.Request) {
 // Method:POST Route: localhost:4000/snippet/create
 func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request) {
 	var form snippetCreatForm
-
 	err := app.decodePostForm(r, &form)
 	if err != nil {
 		app.clientError(w, http.StatusBadRequest)
@@ -87,6 +86,7 @@ func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request
 	form.CheckField(validator.NotBlank(form.Content), "content", "This field cannot be blank")
 	form.CheckField(validator.PermittedInt(form.Expires, 1, 7, 365), "expires", "This field must equal 1, 7 or 365")
 
+	fmt.Println("After Content:", form.Content, "Title:", form.Title, "Expires:", form.Expires, "IsValid:", form.Valid())
 	if !form.Valid() {
 		data := app.newTemplateData(r)
 		data.Form = form
@@ -99,6 +99,8 @@ func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request
 		app.serverError(w, err)
 		return
 	}
+
+	app.sessionManager.Put(r.Context(), "flash", "Snippet successfully created!")
 
 	http.Redirect(w, r, fmt.Sprintf("/snippet/view/%d", id), http.StatusSeeOther)
 }
