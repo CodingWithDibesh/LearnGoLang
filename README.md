@@ -29,6 +29,7 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
 
 - [GetGoing](https://www.udemy.com/course/getgoing/)  Free Course From Udemy amd its [Source Code](https://github.com/L04DB4L4NC3R/getgoing)
 - [LetsGo](https://alexedwards.gumroad.com/l/lets-go) Book by Alex Edwards
+- [Articles from](https://www.alexedwards.net/blog) Alex Edwards
 
 ## Special Thanks
 
