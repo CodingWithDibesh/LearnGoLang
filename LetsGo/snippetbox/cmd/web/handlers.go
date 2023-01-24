@@ -104,3 +104,28 @@ func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request
 
 	http.Redirect(w, r, fmt.Sprintf("/snippet/view/%d", id), http.StatusSeeOther)
 }
+
+// Method:GET Route: localhost:4000/user/signup
+func (app *application) userSignUp(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Display a HTML form for signing up a new user...")
+}
+
+// Method:POST Route: localhost:4000/user/signup
+func (app *application) userSignUpPost(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Create a new user...")
+}
+
+// Method:GET Route: localhost:4000/user/login
+func (app *application) userLogin(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Display a HTML form for logging in a user...")
+}
+
+// Method:POST Route: localhost:4000/user/login
+func (app *application) userLoginPost(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Authenticate and login the user...")
+}
+
+// Method:POST Route: localhost:4000/user/logout
+func (app *application) userLogoutPost(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Logout the user...")
+}
