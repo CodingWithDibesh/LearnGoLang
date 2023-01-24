@@ -50,8 +50,10 @@ func (m *UserModel) Authenticate(email, password string) (int, error) {
 }
 
 func (m *UserModel) Exists(id int) (bool, error) {
-	// TODO:
-	return false, nil
+	var exist bool
+	statement := "SELECT EXISTS(SELECT true FROM users WHERE id =?)"
+	err := m.DB.QueryRow(statement, id).Scan(&exist)
+	return exist, err
 }
 
 func (m *UserModel) Insert(name, email, password string) error {
