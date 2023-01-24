@@ -14,3 +14,5 @@
 |8|POST|/user/login|userLoginPost|Authenticate and login the user|
 |9|POST|/user/logout|userLogoutPost|Logout the user|
 |10|ANY |/static/*filepath| http.FileServer| Serve a specific static file|
+
+You can find `DB Schema` at [docs directory](./docs/Schema-SnippetBox.sql)
