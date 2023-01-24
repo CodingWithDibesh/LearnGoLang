@@ -24,12 +24,14 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
 |:--|:---------|:------------|
 |1|[GetGoing Directory](./GetGoing/README.md)|Basics of Go, A REST API with simple CRUD |
 |2|[LetsGo Directory](./LetsGo/README.md)| A step by Step guide of creating a fast, secure and maintainable go application. |
+|3|[GoRmGin Directory](./GoRmGin/README.md)| Introduction to GORM and Gin |
 
 ## References
 
 - [GetGoing](https://www.udemy.com/course/getgoing/)  Free Course From Udemy amd its [Source Code](https://github.com/L04DB4L4NC3R/getgoing)
 - [LetsGo](https://alexedwards.gumroad.com/l/lets-go) Book by Alex Edwards
-- [Articles from](https://www.alexedwards.net/blog) Alex Edwards
+- Articles from [Alex Edwards](https://www.alexedwards.net/blog)
+- Article from [Thinley Norbu](https://articles.wesionary.team/crud-api-using-go-d55b0ace211e) from [wesionaryTeam](https://articles.wesionary.team)'s medium account
 
 ## Special Thanks
 
