@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-const currentlyWorking = ""
+const currentlyWorking = "Functions"
 
 var workOut = map[string]func(){
 	"Variables":    variables,
@@ -13,6 +13,7 @@ var workOut = map[string]func(){
 	"Operators":    operators,
 	"Conditionals": conditionals,
 	"Loops":        loops,
+	"Functions":    functions,
 }
 
 func main() {
