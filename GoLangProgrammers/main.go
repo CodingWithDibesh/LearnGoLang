@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+const currentlyWorking = ""
+
 var workOut = map[string]func(){
 	"Variables":    variables,
 	"Constants":    constants,
@@ -14,7 +16,6 @@ var workOut = map[string]func(){
 }
 
 func main() {
-	currentlyWorking := "Loops"
 	if len(currentlyWorking) != 0 {
 		fmt.Println("\n\tWorking with ", currentlyWorking)
 		workOut[currentlyWorking]()
@@ -24,5 +25,4 @@ func main() {
 			value()
 		}
 	}
-
 }
