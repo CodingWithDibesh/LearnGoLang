@@ -4,6 +4,8 @@
 
 This is my journey for get going in Golang. I will be sharing my findings, experience and learnings while I'm learning [GoLang](https://golang.google.cn/).
 
+`It's all about iterations with innovation`
+
 <img src="https://miro.medium.com/max/1132/0*DPxp_XfGsvDBvInd.gif" alt="GoLang Gif" style="width:470px;"/>
 
 ![Udemy](https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white) ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![GO](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![GumRoad](https://img.shields.io/badge/GUMROAD-36a9ae?style=for-the-badge&logo=gumroad&logoColor=white)
@@ -22,6 +24,7 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
 
 |SN |Practice  |Area Covered |
 |:--|:---------|:------------|
+|1|[GoLangProgrammers Directory](./GoLangProgrammers/README.md)|Basics of Go|
 |1|[GetGoing Directory](./GetGoing/README.md)|Basics of Go, A REST API with simple CRUD |
 |2|[LetsGo Directory](./LetsGo/README.md)| A step by Step guide of creating a fast, secure and maintainable go application. |
 |3|[GoRmGin Directory](./GoRmGin/README.md)| Introduction to GORM and Gin |
@@ -32,6 +35,7 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
 - [LetsGo](https://alexedwards.gumroad.com/l/lets-go) Book by Alex Edwards
 - Articles from [Alex Edwards](https://www.alexedwards.net/blog)
 - Article from [Golang Docs](https://go.dev/doc/tutorial/web-service-gin)
+- From [GoLangPrograms web site](https://www.golangprograms.com/go-language/variables.html)
 
 ## Special Thanks
 
