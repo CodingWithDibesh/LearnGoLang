@@ -26,3 +26,12 @@ This document is summary of the codes under `MasterGoLang` directory and coding 
     - Print Your Name
     - Greet More People
     - Greet 5 People
+4. Basic Strings
+    - Windows Path
+    - Print JSON
+    - Raw Concat
+    - Count the Chars
+    - Improved Banger
+    - ToLowercase
+    - Trim It
+    - Right Trim It
