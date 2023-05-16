@@ -28,6 +28,7 @@ This is my journey for get going in Golang. I will be sharing my findings, exper
 |1|[GetGoing Directory](./GetGoing/README.md)|Basics of Go, A REST API with simple CRUD |
 |2|[LetsGo Directory](./LetsGo/README.md)| A step by Step guide of creating a fast, secure and maintainable go application. |
 |3|[GoRmGin Directory](./GoRmGin/README.md)| Introduction to GORM and Gin |
+|4|[Master Go Lang](./MasterGoLang/Readme.md) Go Bootcamp: Master Golang with 1000+ Exercises and Projects
 
 ## References
 
