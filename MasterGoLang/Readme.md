@@ -1,0 +1,28 @@
+# Go Bootcamp: Master Golang with 1000+ Exercises and Projects
+
+This document is summary of the codes under `MasterGoLang` directory and coding exercise from Udemy course [Bootcamp: Master Golang with 1000+ Exercises and Projects
+](https://www.udemy.com/course/learn-go-the-complete-bootcamp-course-golang)
+
+1. Variables
+    - Make It Blue
+    - Variables To Variables
+    - Assign With Expressions
+    - Find the Rectangle's Perimeter
+    - Multi Assign
+    - Multi Assign #2
+    - Multi Short Func
+    - Swapper
+    - Swapper #2
+    - Discard The File
+2. Type-Conversion
+    - Convert and Fix #1
+    - Convert and Fix #2
+    - Convert and Fix #3
+    - Convert and Fix #4
+    - Convert and Fix #5
+3. Command Line Arguments
+    - Count the Arguments
+    - Print the Path
+    - Print Your Name
+    - Greet More People
+    - Greet 5 People
