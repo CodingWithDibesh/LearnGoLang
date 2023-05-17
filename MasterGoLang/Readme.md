@@ -35,3 +35,18 @@ This document is summary of the codes under `MasterGoLang` directory and coding 
     - ToLowercase
     - Trim It
     - Right Trim It
+5. IOTA
+    - Iota Months
+    - Iota Months #2
+    - Iota Seasons
+6. PRINTF
+    - Print Your Age
+    - Print Your Name and LastName
+    - False Claims
+    - Print the Temperature
+    - Double Quotes
+    - Print the Type
+    - Print the Type #2
+    - Print the Type #3
+    - Print the Type #4
+    - Print Your Full name
