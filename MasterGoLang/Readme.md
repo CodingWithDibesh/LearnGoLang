@@ -55,3 +55,6 @@ This document is summary of the codes under `MasterGoLang` directory and coding 
     - Simplify It
     - Arg Count
     - Vowel or Consonant
+8. Pass Me Challenges Source Code
+    - Challenge #1
+    - Challenge #2
