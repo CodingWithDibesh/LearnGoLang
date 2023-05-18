@@ -50,3 +50,8 @@ This document is summary of the codes under `MasterGoLang` directory and coding 
     - Print the Type #3
     - Print the Type #4
     - Print Your Full name
+7. If Statement
+    - Age Seasons
+    - Simplify It
+    - Arg Count
+    - Vowel or Consonant
