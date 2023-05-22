@@ -64,3 +64,9 @@ This document is summary of the codes under `MasterGoLang` directory and coding 
     - Leap Year
     - Simplify the Leap Year
     - Days in a Month
+10. Switch Statement
+    - Richter Scale
+    - Richter Scale #2
+    - Convert
+    - String Manipulator
+    - Days in a Month
