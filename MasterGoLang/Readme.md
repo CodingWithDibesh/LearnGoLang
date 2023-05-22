@@ -58,3 +58,9 @@ This document is summary of the codes under `MasterGoLang` directory and coding 
 8. Pass Me Challenges Source Code
     - Challenge #1
     - Challenge #2
+9. Error Handling
+    - Movie Ratings
+    - Odd or Even
+    - Leap Year
+    - Simplify the Leap Year
+    - Days in a Month
