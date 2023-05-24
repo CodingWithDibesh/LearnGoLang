@@ -70,3 +70,12 @@ This document is summary of the codes under `MasterGoLang` directory and coding 
     - Convert
     - String Manipulator
     - Days in a Month
+11. LOOP
+    - Dynamic Table
+    - Math Table
+    - Sum the Numbers
+    - Sum the Numbers: Verbose Edition
+    - Sum up to N
+    - Only Evens
+    - Break Up
+    - Infinite Kill
