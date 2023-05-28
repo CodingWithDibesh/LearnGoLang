@@ -3,6 +3,8 @@
 This document is summary of the codes under `MasterGoLang` directory and coding exercise from Udemy course [Bootcamp: Master Golang with 1000+ Exercises and Projects
 ](https://www.udemy.com/course/learn-go-the-complete-bootcamp-course-golang)
 
+Section 1
+
 1. Variables
     - Make It Blue
     - Variables To Variables
